@@ -1,0 +1,13 @@
+<h1>Dogs!</h1>
+
+<% if @dogs.present? %>
+<div class="row">
+	<div class="span4 offset4">
+		<% for dog in @dogs %>
+		<p>
+			<a href="/<%= dog['id'] %>"><%= dog['name'] %></a>
+		</p>
+		<% end %>
+	</div>
+</div>
+<% end %>
